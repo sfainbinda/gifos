@@ -1,0 +1,1011 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$fontChakra: 'Chakra Petch';
+
+%buttonStyle {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+%nightButtonStyle {
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+%buttonsHover {
+    background: #E6BBE2;
+    border: 1px dotted #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+%nightButtonsHover {
+    background: #EE3EFE;
+    border: 1px dotted #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+%alignElementsToCenter {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+$backgroundColorTitleBars: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+$boxesBackgroundColor: #E6E6E6;
+$shadowStyle: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+
+.dayMode {
+    background-color: #FFF4FD;
+    height: 100%;
+    width: 100%;
+
+    .welcomeContainer {
+        background-image: $backgroundColorTitleBars;
+        box-shadow: 0 1px 0 0 #110038;
+        width: 1438px;
+    
+        p {
+            color: #FFFFFF;
+            font-family: $fontChakra;
+            font-size: 12px;
+            margin-left: 1%;
+            letter-spacing: 0;
+        }
+    }
+    
+    .navContainer {
+        display: flex;
+        flex-flow: row wrap;
+        height: 100px;
+        width: 1438px;
+    
+        .logoContainer {
+            align-items: center;
+            display: flex; 
+            width: 50%;
+    
+            .logo {
+                height: 60px;
+                margin-left: 100px;
+                width: 100px;
+            }
+        }    
+    
+        .buttonsContainer {
+            @extend %alignElementsToCenter;
+            width:50%;
+    
+            .button {
+                @extend %buttonStyle;
+                @extend %alignElementsToCenter;
+                height: 36px;
+                margin-left: 30px;
+                width: 144px;
+    
+                a {
+                    color: #110038;
+                    font-family: $fontChakra;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 18px;
+                    text-decoration: none;
+                }
+            }
+
+            .button:hover {
+                @extend %buttonsHover;
+            }
+            
+            .dropDownButton {
+                @extend %buttonStyle;
+                @extend %alignElementsToCenter;
+                height: 36px;
+                width: 36px;
+            }
+
+            .dropDownButton:hover {
+                @extend %buttonsHover;
+            }
+
+            .myGifos {
+                align-items: center;
+                color: #110038;
+                display: flex;
+                font-family: $fontChakra;
+                font-size: 16px;
+                height: 36px;   
+                justify-content: center;             
+                letter-spacing: 0;
+                line-height: 18px;
+                margin-left: 30px;
+                width: 95px;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            .myGifos:hover {
+                border: 1px dotted #110038;
+            }
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .shiftModeContainer {
+        align-items: center;
+        background: $boxesBackgroundColor;
+        box-shadow: $shadowStyle;
+        display: flex;
+        flex-flow: column;
+        height: 102px;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        margin-left: 1026px;
+        margin-top: -32px;
+        width: 185px;
+
+        .dayModeButton {
+            @extend %alignElementsToCenter;
+            background: #FFF4FD;
+            border: 1px solid #CCA6C9;
+            box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+            height: 36px;
+            width: 150px;
+
+            a {
+                font-family: $fontChakra;
+                font-size: 16px;
+                color: #110038;
+                letter-spacing: 0;
+                line-height: 22px;
+                text-decoration: none;
+            }
+        }
+
+        .nightModeButton {
+            @extend %alignElementsToCenter;
+            background: #F0F0F0;
+            border: 1px solid #808080;
+            box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+            height: 36px;
+            width: 150px;
+
+            a {
+                font-family: $fontChakra;
+                font-size: 16px;
+                color: #110038;
+                letter-spacing: 0;
+                line-height: 22px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .searchBarContainer {
+        background: $boxesBackgroundColor;
+        box-shadow: $shadowStyle;
+        display: flex;
+        flex-flow: column;
+        height: 99px;
+        margin-bottom: 0px;
+        margin-left: 100px;
+        width: 1200px;
+
+        .titleBarOfSearch {
+            background-image: $backgroundColorTitleBars;
+            height: 24px;
+            margin: 3px;
+            width: 1194px;
+
+            p {
+                color: #FFFFFF;
+                font-family: $fontChakra;
+                font-size: 14px;
+                letter-spacing: 0;
+                margin: 3px;
+            }
+        }
+
+        .containerOfSearch {
+            align-items: center;
+            display: flex;
+            height: 75px;
+            margin-left: 15px;
+
+            input {
+                color: #B4B4B4;
+                font-family: $fontChakra;
+                font-size: 16px;
+                height: 48px;
+                letter-spacing: 0;
+                line-height: 22px;
+                width: 1057px;
+            }            
+
+            .searchButton {
+                align-items: center;
+                background: $boxesBackgroundColor;
+                border: 1px solid #808080;
+                box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                display: flex;
+                height: 32px;
+                justify-content: center;
+                margin: 18px;
+                width: 102px;
+
+                img {
+                    height: 16px;
+                    width: 16px;
+                }
+
+                a {
+                    font-family: $fontChakra;
+                    color: #B4B4B4;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 18px;
+                    text-decoration: none;
+                }
+            }
+
+            .searchButtonActive {
+                align-items: center;
+                background: #F7C9F3;
+                border: 1px solid #110038;
+                box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                display: flex;
+                height: 32px;
+                justify-content: center;
+                margin: 18px;
+                width: 102px;
+
+                img {
+                    height: 16px;
+                    width: 16px;
+                }
+
+                a {
+                    color: #000000;
+                    font-family: $fontChakra;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 18px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .searchContainer {
+        display: block;
+        height: 100%;
+        margin-left: 100px;
+        max-width: 1200px;
+
+        .searchSuggestions {
+            background: $boxesBackgroundColor;
+            box-shadow: $shadowStyle;
+            display: flex;
+            flex-flow: column nowrap;
+            height: 160px;
+            margin-top: 0px;
+            width: 1200px;
+
+            .searchSuggestion {
+                align-items: center;
+                background: #F0F0F0;
+                border: 1px solid #808080;
+                box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                display: flex;
+                height: 36px;
+                margin-left: 15px;
+                margin-top: 10px;
+                width: 1048px;
+
+                a {
+                    color: #110038; 
+                    font-family: $fontChakra;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 22px;
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .searchTermsContainer {
+            align-items: center;
+            display: flex;
+            flex-flow: row;
+            height: 50px;
+            justify-content: left;
+            margin-top: 12px;
+            width: 1200px;
+
+            .searchTerm {
+                background: #4180F6;
+                border: 1px solid #4C2F99;
+                box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+                margin-left: 10px;
+                margin-right: 10px;
+                max-height: 34px;
+                width: auto;
+
+                p {
+                    color: #FFFFFF;
+                    font-family: $fontChakra;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    line-height: 18px;  
+                    margin: 5px;
+                }
+            }
+        }
+
+        .searchResultsTitle {
+            align-items: center;
+            background: #FFFAFE;
+            border: 1px solid #E6BBE2;
+            box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+            display: flex;
+            height: 32px;
+            margin-top: 32px;
+            width: 1200px;
+    
+            p {
+                color: #110038;
+                font-family: $fontChakra;
+                font-size: 14px;
+                letter-spacing: 0;
+                margin-left: 7px;
+            }        
+        }
+
+        .searchResultsContainer {
+            align-items: center;
+            display: flex;
+            flex-flow: row wrap;
+            height: 900px;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            width: 1200px;
+
+            .searchGif {
+                align-items: center;
+                height: 280px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                margin-top: 10px;
+                width: 280px;
+            }
+        }
+    }
+    
+    .todaySuggestion {
+        align-items: center;
+        background: #FFFAFE;
+        border: 1px solid #E6BBE2;
+        box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+        display: flex;
+        height: 32px;
+        margin-left: 100px;
+        margin-top: 64px;
+        width: 1200px;
+
+        p {
+            color: #110038;
+            font-family: $fontChakra;
+            font-size: 14px;
+            letter-spacing: 0;
+            margin-left: 7px;
+        }
+    }
+
+    .randomSuggestionsContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 313px;
+        margin-left: 100px;
+        margin-top: 16px;
+        width: 1200px;
+
+        .randomSuggestion {
+            background: $boxesBackgroundColor;
+            box-shadow: $shadowStyle;
+            display: flex;
+            flex-flow: column;
+            height: 313px;
+            margin-right: 16px;
+            width: 288px;
+    
+            .titleBar {
+                align-items: center;
+                background-image: $backgroundColorTitleBars;
+                height: 24px;
+                display: flex;
+                justify-content: start;
+                margin: 3px 4px 1px 4px;
+                width: 280px;
+    
+                p {
+                    color: #FFFFFF;
+                    font-family: $fontChakra;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    margin-left: 3px; 
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 280px;
+                    white-space: nowrap;
+                }
+    
+                img {
+                    height: 14px;
+                    margin: 5px 4px 5px 4px;
+                    width: 16px;
+                }
+            }
+
+            .gifSuggestion {
+                height: 280px;
+                margin: 2px 4px 4px 4px;
+                width: 280px;
+            }
+
+            .gifSuggestion:hover {
+                border: 1px dotted #110038;
+            }
+
+            .moreContent {
+                align-items: center;
+                background: #4180F6;
+                border: 1px solid #4C2F99;
+                box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+                display: flex;
+                flex-flow: row nowrap;
+                height: 34px;
+                justify-content: center;
+                margin-left: 15px;
+                margin-top: -50px;
+                width: 81px;
+
+                z-index: 1;
+                
+                a {
+                    color: #FFFFFF;
+                    font-family: $fontChakra;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    line-height: 18px;
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .trends {
+        align-items: center;
+        background: #FFFAFE;
+        border: 1px solid #E6BBE2;
+        box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+        display: flex;
+        height: 32px;
+        margin-left: 100px;
+        margin-top: 64px;
+        width: 1200px;
+
+        p {
+            color: #110038;
+            font-family: $fontChakra;
+            font-size: 14px;
+            letter-spacing: 0;
+            margin-left: 7px;
+        }   
+    }
+
+    .trendGifsContainer {
+        display: flex;
+        flex-flow: column wrap;
+        height: 1500px;
+        margin-left: 100px;
+        margin-top: 16px;
+        max-width: 1200px;
+
+        .trendGif {
+            margin: 10px;
+            width: 280px;
+        }
+
+    }
+}    
+
+.nightMode {
+    background-color: #16003B;
+
+    .welcomeContainer {
+        background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+        box-shadow: 0 1px 0 0 #110038;
+        width: 1438px;
+
+    
+        p {
+            color: #FFFFFF;
+            font-family: $fontChakra;
+            font-size: 12px;
+            margin-left: 1%;
+            letter-spacing: 0;
+        }
+    }
+    
+    .navContainer {
+        display: flex;
+        flex-flow: row wrap;
+        height: 100px;
+        width: 1438px;
+    
+        .logoContainer {
+            align-items: center;
+            display: flex; 
+            width: 50%;
+    
+            .logo {
+                height: 60px;
+                margin-left: 100px;
+                width: 100px;
+            }
+        }    
+    
+        .buttonsContainer {
+            @extend %alignElementsToCenter;
+            width:50%;
+    
+            .button {
+                @extend %nightButtonStyle;
+                @extend %alignElementsToCenter;
+                height: 36px;
+                margin-left: 30px;
+                width: 144px;
+
+                a {
+                    color: #FFFFFF;
+                    font-family: $fontChakra;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 18px;
+                    text-decoration: none;
+                }
+            }
+
+            .button:hover {
+                @extend %nightButtonsHover;
+            }
+            
+            .dropDownButton {
+                @extend %nightButtonStyle;
+                @extend %alignElementsToCenter;
+                height: 36px;
+                width: 36px;
+            }
+
+            .dropDownButton:hover {
+                @extend %nightButtonsHover;
+            }
+
+            .myGifos {
+                @extend %alignElementsToCenter;
+                color: #FFFFFF;
+                font-family: $fontChakra;
+                font-size: 16px;
+                height: 36px;   
+                letter-spacing: 0;
+                line-height: 18px;
+                margin-left: 30px;
+                width: 95px;
+
+                a {
+                    color:#FFFFFF;
+                    text-decoration: none;
+                }
+            }
+
+            .myGifos:hover {
+                border: 1px dotted #FFFFFF;
+            }
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .shiftModeContainer {
+        align-items: center;
+        background: #B4B4B4; 
+        box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;        
+        display: flex;
+        flex-flow: column;
+        height: 102px;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        margin-left: 1026px;
+        margin-top: -32px;
+        width: 185px;
+
+        .dayModeButton {
+            @extend %alignElementsToCenter;
+            background: #CCCCCC;
+            border: 1px solid #808080;
+            box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+            height: 36px;
+            width: 150px;
+
+            a {
+                color: #110038;
+                font-family: $fontChakra;
+                font-size: 16px;
+                letter-spacing: 0;
+                line-height: 22px;
+                text-decoration: none;
+            }
+        }
+
+        .nightModeButton {
+            @extend %alignElementsToCenter;
+            background: #2E32FB;
+            border: 1px solid rgba(51,53,143,0.20);
+            box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+            height: 36px;
+            width: 150px;
+
+            a {
+                color: #FFFFFF;
+                font-family: $fontChakra;
+                font-size: 16px;
+                letter-spacing: 0;
+                line-height: 22px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .searchBarContainer {
+        background: #B4B4B4;
+        box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;background:#B4B4B4;
+        display: flex;
+        flex-flow: column;
+        height: 99px;
+        margin-bottom: 0px;
+        margin-left: 100px;
+        width: 1200px;
+
+        .titleBarOfSearch {
+            background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+            height: 24px;
+            margin: 3px;
+            width: 1194px;
+
+            p {
+                color: #FFFFFF;
+                font-family: $fontChakra;
+                font-size: 14px;
+                letter-spacing: 0;
+                margin: 3px;
+            }
+        }
+
+        .containerOfSearch {
+            align-items: center;
+            display: flex;
+            height: 75px;
+            margin-left: 15px;
+
+            input {
+                color: #B4B4B4;
+                font-family: $fontChakra;
+                font-size: 16px;
+                height: 48px;
+                letter-spacing: 0;
+                line-height: 22px;
+                width: 1057px;
+            }            
+
+            .searchButton {
+                align-items: center;
+                background: #B4B4B4;
+                border: 1px solid #808080;
+                box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                display: flex;
+                height: 32px;
+                justify-content: center;
+                margin: 18px;
+                width: 102px;
+
+                img {
+                    height: 16px;
+                    width: 16px;
+                }
+
+                a {
+                    color: #8F8F8F;
+                    font-family: $fontChakra;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 18px;
+                    text-decoration: none;
+                }
+            }
+
+            .searchButtonActive {
+                align-items: center;
+                background: #EE3EFE;
+                border: 1px solid #110038;
+                box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+                display: flex;
+                height: 32px;
+                justify-content: center;
+                margin: 18px;
+                width: 102px;
+
+                img {
+                    height: 16px;
+                    width: 16px;
+                }
+
+                a {
+                    color: #FFFFFF;
+                    font-family: $fontChakra;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 18px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .searchContainer {
+        display: block;
+        height: 100%;
+        margin-left: 100px;
+        max-width: 1200px;
+
+        .searchSuggestions {
+            background: #B4B4B4;
+            box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+            display: flex;
+            flex-flow: column nowrap;
+            height: 160px;
+            margin-top: 0px;
+            width: 1200px;
+
+            .searchSuggestion {
+                align-items: center;
+                background: #CCCCCC;
+                border: 1px solid #808080;
+                box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                display: flex;
+                flex-flow: row nowrap;
+                height: 36px;
+                margin-left: 15px;
+                margin-top: 10px;
+                width: 1048px;
+
+                a {
+                    color: #110038;
+                    font-family: $fontChakra;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 22px;
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .searchTermsContainer {
+            align-items: center;
+            display: flex;
+            flex-flow: row;
+            height: 50px;
+            justify-content: left;
+            margin-top: 12px;
+            width: 1200px;
+
+            .searchTerm {
+                background: #2124B3;
+                border: 1px solid #4C2F99;
+                box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+                margin-left: 10px;
+                margin-right: 10px;
+                max-height: 34px;
+                width: auto;
+
+                p {
+                    color: #FFFFFF;
+                    font-family: $fontChakra;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    line-height: 18px;  
+                    margin: 5px;
+                }
+            }
+        }
+
+        .searchResultsTitle {
+            align-items: center;
+            background: #FFFAFE;
+            border: 1px solid #E6BBE2;
+            box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+            display: flex;
+            height: 32px;
+            margin-top: 64px;
+            width: 1200px;
+    
+            p {
+                color: #110038;
+                font-family: $fontChakra;
+                font-size: 14px;
+                letter-spacing: 0;
+                margin-left: 7px;
+            }        
+        }
+
+        .searchResultsContainer {
+            align-items: center;
+            display: flex;
+            flex-flow: row wrap;
+            height: 900px;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            width: 1200px;
+
+            .searchGif {
+                align-items: center;
+                height: 280px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                margin-top: 10px;
+                width: 280px;
+            }
+        }
+    }
+    
+    .todaySuggestion {
+        align-items: center;
+        background: #FFFAFE;
+        border: 1px solid #2E32FB;
+        box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+        display: flex;
+        height: 32px;
+        margin-left: 100px;
+        margin-top: 64px;
+        width: 1200px;
+
+        p {
+            color: #110038;
+            font-family: $fontChakra;
+            font-size: 14px;
+            letter-spacing: 0;
+            margin-left: 7px;
+        }
+    }
+
+    .randomSuggestionsContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 313px;
+        margin-left: 100px;
+        margin-top: 16px;
+        width: 1200px;
+
+        .randomSuggestion {
+            background: $boxesBackgroundColor;
+            box-shadow: $shadowStyle;
+            display: flex;
+            flex-flow: column;
+            height: 313px;
+            margin-right: 16px;
+            width: 288px;
+    
+            .titleBar {
+                align-items: center;
+                background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+                height: 24px;
+                display: flex;
+                justify-content: start;
+                margin: 3px 4px 1px 4px;
+                width: 280px;
+
+                p {
+                    color: #FFFFFF;
+                    font-family: $fontChakra;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    margin-left: 3px; 
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 280px;
+                    white-space: nowrap;
+                }
+    
+                img {
+                    height: 14px;
+                    margin: 5px 4px 5px 4px;
+                    width: 16px;
+                }
+            }
+
+            .gifSuggestion {
+                height: 280px;
+                margin: 2px 4px 4px 4px;
+                width: 280px;
+            }
+
+            .gifSuggestion:hover {
+                border: 1px dotted #110038;
+            }
+
+            .moreContent {
+                @extend %alignElementsToCenter;
+                background: #2E32FB;
+                border: 1px solid #4C2F99;
+                box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+                height: 34px; 
+                margin-left: 15px;
+                margin-top: -50px;
+                width: 81px;
+                z-index: 1;
+
+                a {
+                    color: #FFFFFF;
+                    font-family: $fontChakra;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    line-height: 18px;
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .trends {
+        align-items: center;
+        background: #FFFAFE;
+        border: 1px solid #2E32FB;
+        box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;        
+        display: flex;
+        height: 32px;
+        margin-left: 100px;
+        margin-top: 64px;
+        width: 1200px;
+
+        p {
+            color: #110038;
+            font-family: $fontChakra;
+            font-size: 14px;
+            letter-spacing: 0;
+            margin-left: 7px;
+        }   
+    }
+
+    .trendGifsContainer {
+        display: flex;
+        flex-flow: column wrap;
+        height: 1500px;
+        margin-left: 100px;
+        margin-top: 16px;
+        max-width: 1200px;
+
+        .trendGif {
+            margin: 10px;
+            width: 280px;
+        }
+    }   
+}

@@ -1,0 +1,1620 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dayMode .navContainer .buttonsContainer .button, .dayMode .navContainer .buttonsContainer .dropDownButton, .dayMode .videoContainer .videoButtonsContainer .cameraIconContainer {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nightMode .navContainer .buttonsContainer .button, .nightMode .navContainer .buttonsContainer .dropDownButton {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dayMode .navContainer .buttonsContainer .button:hover, .dayMode .navContainer .buttonsContainer .dropDownButton:hover, .dayMode .createGifOsContainer .container .buttons #start:hover {
+  background: #E6BBE2;
+  border: 1px dotted #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nightMode .navContainer .buttonsContainer .button:hover, .nightMode .navContainer .buttonsContainer .dropDownButton:hover {
+  background: #EE3EFE;
+  border: 1px dotted #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dayMode .navContainer .arrowContainer, .dayMode .navContainer .arrowContainer .arrow, .dayMode .navContainer .buttonsContainer .button, .dayMode .navContainer .buttonsContainer .dropDownButton, .dayMode .shiftModeContainer .dayModeButton, .dayMode .shiftModeContainer .nightModeButton, .dayMode .createGifOsContainer .container .tutorialImgContainer, .dayMode .createGifOsContainer .container .buttons, .dayMode .createGifOsContainer .container .buttons #cancel, .dayMode .createGifOsContainer .container .buttons #start, .dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .linkButton, .dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .downloadButton, .dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .doneButtonContainer .doneButton, .nightMode .navContainer .arrowContainer, .nightMode .navContainer .arrowContainer .arrow, .nightMode .navContainer .buttonsContainer .button, .nightMode .navContainer .buttonsContainer .dropDownButton, .nightMode .navContainer .buttonsContainer .myGifos, .nightMode .shiftModeContainer .dayModeButton, .nightMode .shiftModeContainer .nightModeButton, .nightMode .createGifOsContainer .container .tutorialImgContainer, .nightMode .createGifOsContainer .container .buttons, .nightMode .createGifOsContainer .container .buttons #cancel, .nightMode .createGifOsContainer .container .buttons #start, .nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .linkButton, .nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .downloadButton, .nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .doneButtonContainer .doneButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dayMode {
+  background-color: #FFF4FD;
+  height: 100%;
+}
+
+.dayMode .welcomeContainer {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  width: 1438px;
+}
+
+.dayMode .welcomeContainer p {
+  color: #FFFFFF;
+  font-family: "Chakra Petch";
+  font-size: 12px;
+  margin-left: 1%;
+  letter-spacing: 0;
+}
+
+.dayMode .navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 100px;
+  width: 1438px;
+}
+
+.dayMode .navContainer .arrowContainer {
+  width: 7%;
+}
+
+.dayMode .navContainer .arrowContainer .arrow {
+  height: 24px;
+  width: 24px;
+}
+
+.dayMode .navContainer .logoContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 43%;
+}
+
+.dayMode .navContainer .logoContainer .logo {
+  height: 60px;
+  width: 100px;
+}
+
+.dayMode .navContainer .buttonsContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.dayMode .navContainer .buttonsContainer .button {
+  height: 36px;
+  margin-left: 30px;
+  width: 144px;
+}
+
+.dayMode .navContainer .buttonsContainer .button a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.dayMode .navContainer .buttonsContainer .dropDownButton {
+  height: 36px;
+  width: 36px;
+}
+
+.dayMode .navContainer .buttonsContainer .myGifos {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #110038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  height: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 30px;
+  width: 95px;
+}
+
+.dayMode .navContainer .buttonsContainer .myGifos a {
+  text-decoration: none;
+}
+
+.dayMode .navContainer .buttonsContainer .myGifos:hover {
+  border: 1px dotted #110038;
+}
+
+.dayMode .hidden {
+  display: none;
+}
+
+.dayMode .shiftModeContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 102px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 30px;
+  margin-left: 1026px;
+  margin-top: 69px;
+  position: absolute;
+  width: 185px;
+}
+
+.dayMode .shiftModeContainer .dayModeButton {
+  background: #FFF4FD;
+  border: 1px solid #CCA6C9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+  height: 36px;
+  width: 150px;
+}
+
+.dayMode .shiftModeContainer .dayModeButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.dayMode .shiftModeContainer .nightModeButton {
+  background: #F0F0F0;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  height: 36px;
+  width: 150px;
+}
+
+.dayMode .shiftModeContainer .nightModeButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.dayMode .createGifOsContainer {
+  background-color: #E6E6E6;
+  font-family: "Chakra Petch";
+  height: 386px;
+  margin-left: 378px;
+  width: 750px;
+}
+
+.dayMode .createGifOsContainer .titleBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.dayMode .createGifOsContainer .titleBar p {
+  color: #FFFFFF;
+  margin-left: 3px;
+}
+
+.dayMode .createGifOsContainer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.dayMode .createGifOsContainer .container .tutorialImgContainer {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 80px;
+}
+
+.dayMode .createGifOsContainer .container .tutorialImgContainer img {
+  height: 32px;
+  width: 32px;
+}
+
+.dayMode .createGifOsContainer .container .tutorialContainer {
+  margin-left: 10px;
+}
+
+.dayMode .createGifOsContainer .container .tutorialContainer .tutorialTitle {
+  font-weight: bold;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  color: #110038;
+}
+
+.dayMode .createGifOsContainer .container .tutorialContainer .text {
+  color: #110038;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.dayMode .createGifOsContainer .container .buttons {
+  margin-left: 250px;
+  margin-top: 20px;
+}
+
+.dayMode .createGifOsContainer .container .buttons #cancel {
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  height: 36px;
+  width: 144px;
+}
+
+.dayMode .createGifOsContainer .container .buttons #cancel a {
+  text-decoration: none;
+}
+
+.dayMode .createGifOsContainer .container .buttons #cancel:hover {
+  background: #F0E5EE;
+  border: 1px dotted #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dayMode .createGifOsContainer .container .buttons #start {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  height: 36px;
+  margin-left: 16px;
+  width: 144px;
+}
+
+.dayMode .createGifOsContainer .container .buttons #start a {
+  text-decoration: none;
+}
+
+.dayMode .videoContainer {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  height: 548px;
+  margin-left: 265px;
+  width: 860px;
+}
+
+.dayMode .videoContainer .titleBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  margin-left: 1px;
+  margin-top: 1px;
+  width: 860px;
+}
+
+.dayMode .videoContainer .titleBar p {
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+.dayMode .videoContainer #gif {
+  height: 434px;
+  margin-left: 11px;
+  margin-top: 11px;
+  width: 823px;
+}
+
+.dayMode .videoContainer #video {
+  height: 434px;
+  margin-left: 10px;
+  width: 823px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  float: right;
+  margin-right: 16px;
+  margin-top: 30px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .cameraIconContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 36px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .cameraIconContainer img {
+  height: 16.5px;
+  width: 18px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .captureButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 144px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .captureButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .recodingIconContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF6161;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 36px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .recodingIconContainer img {
+  height: 16.5px;
+  width: 18px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .readyButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF6161;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 144px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .readyButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .replayButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 144px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .replayButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .uploadButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20px;
+  height: 36px;
+  width: 144px;
+}
+
+.dayMode .videoContainer .videoButtonsContainer .uploadButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+.dayMode .uploadingGifoContainer {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  height: 548px;
+  margin-left: 265px;
+  width: 860px;
+}
+
+.dayMode .uploadingGifoContainer .titleBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  margin: 2px;
+}
+
+.dayMode .uploadingGifoContainer .titleBar p {
+  color: #FFFFFF;
+  font-family: "Chakra Petch";
+  margin-left: 4px;
+}
+
+.dayMode .uploadingGifoContainer .uploadContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 440px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 8px;
+  margin-top: 8px;
+  width: 838px;
+}
+
+.dayMode .uploadingGifoContainer .uploadContainer img {
+  height: 48px;
+  margin-bottom: 8px;
+  width: 48px;
+}
+
+.dayMode .uploadingGifoContainer .uploadContainer p {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+}
+
+.dayMode .uploadingGifoContainer .cancelButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  height: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 702px;
+  margin-top: 21px;
+  width: 144px;
+}
+
+.dayMode .uploadingGifoContainer .cancelButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.dayMode .uploadedSuccessfullyContainer {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  height: 391px;
+  margin-left: 360px;
+  width: 721px;
+}
+
+.dayMode .uploadedSuccessfullyContainer .titleBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.dayMode .uploadedSuccessfullyContainer .titleBar p {
+  color: #FFFFFF;
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  letter-spacing: 0;
+  margin: 4px;
+}
+
+.dayMode .uploadedSuccessfullyContainer .uploadedDataContainer {
+  margin-top: 27px;
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .lastPreview {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  height: 191px;
+  width: 365px;
+}
+
+.dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .lastPreview img {
+  height: 190px;
+  width: 364px;
+}
+
+.dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 27px;
+}
+
+.dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .optionContainerTitle p {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-left: -100px;
+}
+
+.dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .linkButton {
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  height: 36px;
+  margin-top: 14px;
+  width: 256px;
+}
+
+.dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .linkButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .downloadButton {
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  height: 36px;
+  margin-top: 14px;
+  width: 256px;
+}
+
+.dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .downloadButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .doneButtonContainer .doneButton {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  height: 36px;
+  width: 144px;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+
+.dayMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .doneButtonContainer .doneButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.dayMode .myGifosSecction {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-top: 64px;
+  width: 1200px;
+}
+
+.dayMode .myGifosSecction p {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-left: 7px;
+}
+
+.dayMode .gifosViewContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 500px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-left: 100px;
+  width: 1200px;
+}
+
+.dayMode .gifosViewContainer img {
+  height: 250px;
+  margin: 0px 20px 20px 0px;
+  width: 250px;
+}
+
+.nightMode {
+  background-color: #16003B;
+  height: 100%;
+}
+
+.nightMode .welcomeContainer {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  width: 1438px;
+}
+
+.nightMode .welcomeContainer p {
+  color: #FFFFFF;
+  font-family: "Chakra Petch";
+  font-size: 12px;
+  margin-left: 1%;
+  letter-spacing: 0;
+}
+
+.nightMode .navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 100px;
+  width: 1438px;
+}
+
+.nightMode .navContainer .arrowContainer {
+  width: 7%;
+}
+
+.nightMode .navContainer .arrowContainer .arrow {
+  height: 24px;
+  width: 24px;
+}
+
+.nightMode .navContainer .logoContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 43%;
+}
+
+.nightMode .navContainer .logoContainer .logo {
+  height: 60px;
+  width: 100px;
+}
+
+.nightMode .navContainer .buttonsContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.nightMode .navContainer .buttonsContainer .button {
+  height: 36px;
+  margin-left: 30px;
+  width: 144px;
+}
+
+.nightMode .navContainer .buttonsContainer .button a {
+  color: #FFFFFF;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.nightMode .navContainer .buttonsContainer .dropDownButton {
+  height: 36px;
+  width: 36px;
+}
+
+.nightMode .navContainer .buttonsContainer .myGifos {
+  color: #FFFFFF;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  height: 36px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 30px;
+  width: 95px;
+}
+
+.nightMode .navContainer .buttonsContainer .myGifos a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nightMode .navContainer .buttonsContainer .myGifos:hover {
+  border: 1px dotted #FFFFFF;
+}
+
+.nightMode .hidden {
+  display: none;
+}
+
+.nightMode .shiftModeContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 102px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 30px;
+  margin-left: 1026px;
+  margin-top: 69px;
+  position: absolute;
+  width: 185px;
+}
+
+.nightMode .shiftModeContainer .dayModeButton {
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  height: 36px;
+  width: 150px;
+}
+
+.nightMode .shiftModeContainer .dayModeButton a {
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.nightMode .shiftModeContainer .nightModeButton {
+  background: #2E32FB;
+  border: 1px solid rgba(51, 53, 143, 0.2);
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+  height: 36px;
+  width: 150px;
+}
+
+.nightMode .shiftModeContainer .nightModeButton a {
+  color: #FFFFFF;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.nightMode .createGifOsContainer {
+  background-color: #E6E6E6;
+  font-family: "Chakra Petch";
+  height: 386px;
+  margin-left: 378px;
+  width: 750px;
+}
+
+.nightMode .createGifOsContainer .titleBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.nightMode .createGifOsContainer .titleBar p {
+  color: #FFFFFF;
+  margin-left: 3px;
+}
+
+.nightMode .createGifOsContainer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.nightMode .createGifOsContainer .container .tutorialImgContainer {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 80px;
+}
+
+.nightMode .createGifOsContainer .container .tutorialImgContainer img {
+  height: 32px;
+  width: 32px;
+}
+
+.nightMode .createGifOsContainer .container .tutorialContainer {
+  margin-left: 10px;
+}
+
+.nightMode .createGifOsContainer .container .tutorialContainer .tutorialTitle {
+  color: #110038;
+  font-weight: bold;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+}
+
+.nightMode .createGifOsContainer .container .tutorialContainer .text {
+  color: #110038;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.nightMode .createGifOsContainer .container .buttons {
+  margin-left: 250px;
+  margin-top: 20px;
+}
+
+.nightMode .createGifOsContainer .container .buttons #cancel {
+  background: #110038;
+  border: 1px solid #B4B4B4;
+  -webkit-box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+          box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+  height: 36px;
+  width: 144px;
+}
+
+.nightMode .createGifOsContainer .container .buttons #cancel a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nightMode .createGifOsContainer .container .buttons #cancel:hover {
+  background: #110038;
+  border: 1px dotted #ffffff;
+  -webkit-box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+          box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
+
+.nightMode .createGifOsContainer .container .buttons #start {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+  height: 36px;
+  margin-left: 16px;
+  width: 144px;
+}
+
+.nightMode .createGifOsContainer .container .buttons #start a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nightMode .createGifOsContainer .container .buttons #start:hover {
+  background: #CE36DB;
+  border: 1px dotted #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nightMode .videoContainer {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+  height: 548px;
+  margin-left: 265px;
+  width: 860px;
+}
+
+.nightMode .videoContainer .titleBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+  margin-left: 1px;
+  margin-top: 1px;
+  width: 860px;
+}
+
+.nightMode .videoContainer .titleBar p {
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+.nightMode .videoContainer #gif {
+  height: 434px;
+  margin-left: 11px;
+  margin-top: 11px;
+  width: 823px;
+}
+
+.nightMode .videoContainer #video {
+  height: 434px;
+  margin-left: 10px;
+  width: 823px;
+}
+
+.nightMode .videoContainer .videoButtonsContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  float: right;
+  margin-right: 16px;
+  margin-top: 30px;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .cameraIconContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 36px;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .cameraIconContainer img {
+  height: 16.5px;
+  width: 18px;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .captureButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 144px;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .captureButton a {
+  color: #ffffff;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .recodingIconContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF6161;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 36px;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .recodingIconContainer img {
+  height: 16.5px;
+  width: 18px;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .readyButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF6161;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 144px;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .readyButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .replayButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #110038;
+  border: 1px solid #B4B4B4;
+  -webkit-box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+          box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 144px;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .replayButton a {
+  color: #ffffff;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .replayButton:hover {
+  border: 1px dotted #B4B4B4;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .uploadButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20px;
+  width: 144px;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .uploadButton a {
+  color: #ffffff;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.nightMode .videoContainer .videoButtonsContainer .uploadButton:hover {
+  background: #CE36DB;
+  border: 1px dotted #110038;
+}
+
+.nightMode .uploadingGifoContainer {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+  height: 548px;
+  margin-left: 265px;
+  width: 860px;
+}
+
+.nightMode .uploadingGifoContainer .titleBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+  margin: 2px;
+}
+
+.nightMode .uploadingGifoContainer .titleBar p {
+  color: #FFFFFF;
+  font-family: "Chakra Petch";
+  margin-left: 4px;
+}
+
+.nightMode .uploadingGifoContainer .uploadContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 440px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 8px;
+  margin-top: 8px;
+  width: 838px;
+}
+
+.nightMode .uploadingGifoContainer .uploadContainer img {
+  height: 48px;
+  margin-bottom: 8px;
+  width: 48px;
+}
+
+.nightMode .uploadingGifoContainer .uploadContainer p {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+}
+
+.nightMode .uploadingGifoContainer .cancelButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  height: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 702px;
+  margin-top: 21px;
+  width: 144px;
+}
+
+.nightMode .uploadingGifoContainer .cancelButton a {
+  color: #ffffff;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.nightMode .uploadedSuccessfullyContainer {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+  height: 391px;
+  margin-left: 360px;
+  width: 721px;
+}
+
+.nightMode .uploadedSuccessfullyContainer .titleBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.nightMode .uploadedSuccessfullyContainer .titleBar p {
+  color: #FFFFFF;
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  letter-spacing: 0;
+  margin: 4px;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin-left: 24px;
+  margin-top: 27px;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .lastPreview {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  height: 191px;
+  width: 365px;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .lastPreview img {
+  height: 190px;
+  width: 364px;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 27px;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .optionContainerTitle p {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-left: -100px;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .linkButton {
+  background: #110038;
+  border: 1px solid #B4B4B4;
+  -webkit-box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+          box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+  height: 36px;
+  margin-top: 14px;
+  width: 256px;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .linkButton a {
+  color: #ffffff;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .linkButton:hover {
+  border: 1px dotted #FFFFFF;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .downloadButton {
+  background: #110038;
+  border: 1px solid #B4B4B4;
+  -webkit-box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+          box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+  height: 36px;
+  margin-top: 14px;
+  width: 256px;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .downloadButton a {
+  color: #ffffff;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .downloadButton:hover {
+  border: 1px dotted #FFFFFF;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .doneButtonContainer .doneButton {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  height: 36px;
+  width: 144px;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .doneButtonContainer .doneButton a {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.nightMode .uploadedSuccessfullyContainer .uploadedDataContainer .optionsContainer .doneButtonContainer .doneButton:hover {
+  border: 1px dotted #110038;
+}
+
+.nightMode .myGifosSecction {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFAFE;
+  border: 1px solid #2E32FB;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-top: 64px;
+  width: 1200px;
+}
+
+.nightMode .myGifosSecction p {
+  color: #110038;
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-left: 7px;
+}
+
+.nightMode .gifosViewContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 500px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-left: 100px;
+  width: 1200px;
+}
+
+.nightMode .gifosViewContainer img {
+  height: 250px;
+  margin: 20px;
+  width: 250px;
+}
+/*# sourceMappingURL=misGifOs.css.map */
